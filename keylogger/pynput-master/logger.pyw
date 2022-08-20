@@ -3,7 +3,7 @@ import logging                                  # import the logging module, van
 
 log_dir = ""                                  # set the log directory to an empty string
 
-loggin.basicConfig(filename = (log_dir + "key_log.txt"), level = logging.DEBUG, format = "%(asctime)s: %(message)s")                             
+loggin.basicConfig(filename = (log_dir + "key_log.txt"), level = logging.DEBUG, format = '%(asctime)s: %(message)s')                             
       #            set out file/the file to log to, set the level to debug, and set the format to the time and the message
 # set the log file to key_log.txt and set the level to DEBUG
 
